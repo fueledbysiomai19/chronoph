@@ -1,0 +1,542 @@
+<html>
+<head>
+	<title>Order - Chrono PH</title>
+	<link rel = "stylesheet" type = "text/css" href = "3_home.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<!-- ********************** favicon  ********************** -->
+	<link rel = "shortcut icon" type = "image/x-icon" href = "1564545162.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}	
+	</script>
+	  <script type="text/javascript">
+    function calculate() {
+	var qty = parseInt(document.input.qty.value);
+	var price = parseInt(document.input.price.value);
+		    var loc = document.input.lcode.value;
+			if (loc == "Metro Manila"){
+			    document.input.lt.value = "Metro Manila";
+				if (qty <= 3){
+				var sf = 100;
+				var disc = 0;
+				var d = "Unavailable";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+				
+				else if (qty > 3 && qty <= 6){
+				var sf = 125;
+				var disc = 0.10;
+				var d = "10%";				
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+
+				else if (qty > 6 && qty <=12){
+				var sf = 150;
+				var disc = 0.15;
+				var d = "15%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;				
+				}	
+
+				else if (qty > 12){
+				var sf = 0;
+				var s = "Free Shipping";
+				var disc = 0.20;
+				var d = "20%";
+				document.input.sf.value = s;
+				document.input.disc.value = d;				
+				}				
+
+				var tot = parseInt(qty) * parseInt(price);
+				var fin = parseInt(tot) + parseInt(sf) - parseInt(disc);
+				document.input.tot.value = tot;
+				document.input.fin.value = fin;
+			}
+			
+			else if (loc == "Luzon"){
+			    document.input.lt.value = "Luzon";
+				if (qty <= 3){
+				var sf = 125;
+				var disc = 0;
+				var d = "Unavailable";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+				
+				else if (qty > 3 && qty <= 6){
+				var sf = 150;
+				var disc = 0.10;
+				var d = "10%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+
+				else if (qty > 6 && qty <=12){
+				var sf = 175;
+				var disc = 0.15;
+				var d = "15%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;				
+				}	
+
+				else if (qty > 12){
+				var sf = 0;
+				var s = "Free Shipping";
+				var disc = 0.20;
+				var d = "20%";
+				document.input.sf.value = s;
+				document.input.disc.value = d;				
+				}				
+
+				var tot = parseInt(qty) * parseInt(price);
+				var fin = parseInt(tot) + parseInt(sf) - parseInt(disc);
+				document.input.tot.value = tot;
+				document.input.fin.value = fin;
+			}
+			
+			else if (loc == "Visayas"){
+			    document.input.lt.value = "Visayas";
+				if (qty <= 3){
+				var sf = 150;
+				var disc = 0;
+				var d = "Unavailable";				
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+				
+				else if (qty > 3 && qty <= 6){
+				var sf = 175;
+				var disc = 0.10;
+				var d = "10%";			
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+
+				else if (qty > 6 && qty <=12){
+				var sf = 200;
+				var disc = 0.15;
+				var d = "15%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;				
+				}	
+
+				else if (qty > 12){
+				var sf = 0;
+				var s = "Free Shipping";
+				var disc = 0.20;
+				var d = "20%";
+				document.input.sf.value = s;
+				document.input.disc.value = d;				
+				}				
+
+				var tot = parseInt(qty) * parseInt(price);
+				var fin = parseInt(tot) + parseInt(sf) - parseInt(disc);
+				document.input.tot.value = tot;
+				document.input.fin.value = fin;
+			}
+
+			else if (loc == "Mindanao"){
+			    document.input.lt.value = "Mindanao";
+				if (qty <= 3){
+				var sf = 175;
+				var disc = 0;
+				var d = "Unavailable";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+				
+				else if (qty > 3 && qty <= 6){
+				var sf = 200;
+				var disc = 0.10;
+				var d = "10%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;					
+				}
+
+				else if (qty > 6 && qty <=12){
+				var sf = 225;
+				var disc = 0.15;
+				var d = "15%";
+				document.input.sf.value = sf;
+				document.input.disc.value = d;				
+				}	
+
+				else if (qty > 12){
+				var sf = 0;
+				var s = "Free Shipping";
+				var disc = 0.20;
+				var d = "20%";
+				document.input.sf.value = s;
+				document.input.disc.value = d;				
+				}				
+
+				var tot = parseInt(qty) * parseInt(price);
+				var fin = parseInt(tot) + parseInt(sf) - parseInt(disc);
+				document.input.tot.value = tot;
+				document.input.fin.value = fin;
+			}			
+}
+  </script>
+	
+	
+</head>
+
+<body>		
+<div id = "container">
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+	         <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+		<div class = "containerchk">
+			<div class="payrow">
+				<div class="paycolumn">
+					<form action="checkout.html">
+						<p><font color = "black" size = "3">Delivery Address:</p> 
+							<label for="fname"><font color = "black" size = "1">Full Name</label>
+							<br><input type="text" id="fname" name="firstname" placeholder="Your full name..">
+
+							<br><label for="num"> <p><font color = "black">Contact Number</label>
+							<br><input type="text" id="num" name="num" placeholder="Your mobile number..">
+  
+							 <br><label for="email"> <p><font color = "black">E-mail</label>
+							<br><input type="text" id="email" name="email" placeholder="Your e-mail address..">
+
+							<br><label for="add"> <p><font color = "black">Address</label>
+							<br><textarea id="add" name="add" placeholder="Your delivery address.."></textarea>	
+	
+							<br><input type="submit" value="Checkout">
+					</form>
+				</div>
+		    
+				<div class="paycolumn">
+						<p><font color = "black" size = "3">Payment by Remittances:</p>
+						<p>
+							<div class="tooltip"><img src = "pal.jpg" id = "imgpay">
+								 <span class="tooltiptext">Palawan Express</span>
+							</div>	 
+							&nbsp;&nbsp;
+							<div class="tooltip"><img src = "ceb.jpg" id = "imgpay">
+								 <span class="tooltiptext">Cebuana Lhuillier</span>
+							</div>			
+							&nbsp;&nbsp;
+							<div class="tooltip"><img src = "gc.jpg" id = "imgpay">
+								 <span class="tooltiptext">GCash</span>					
+							</div>
+							&nbsp;&nbsp;				
+							<div class="tooltip"><img src = "ml.png" id = "imgpay">
+								 <span class="tooltiptext">M Lhuillier</span>						
+							</div>
+						</p>	
+						<p><font color = "black" size = "2">Klaudice C. Regpala<br>0997-375-9397<br>Antipolo City</p>				
+						<br>
+							<p><font color = "black" size = "3">Reminders:</p>		
+							<p><font color = "black" size = "1">
+								<ul id = "rem">
+									<li>Pay now, ship tomorrow.</li>
+									<li>Upon payment, kindly send us a scanned copy or photo of your transaction receipt as proof of payment via e-mail.</li>
+									<li>Delivery is 2-3 business days within Metro Manila, and 3-5 busines days for provincial areas.</li>
+								</ul>
+							</p>			
+			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="w3-top">
+ <div id ="top">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						  <a href="3_home.html">Home</a>
+					  <a href="products.html">Products</a>
+					  <a href="3_home.html#homeabout">About Us</a>
+					  <a href="3_home.html#team">The Team</a>  
+					  <a href="#contact">Contact Us</a> 
+					  <a href="faq.html">FAQs</a> 
+</div>
+		
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&nbsp;&nbsp;&#9776;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <a href="3_home.html"><img src = "ohno.png" id = "topimg"></a>
+
+  </div>
+
+</div>
+</div>
+
+<div id = "concon">	
+		<div id = "header"> 
+			<img src = "header.png" id = "bebe" width = "100%">			
+		</div>	
+		
+
+		<div id = "content"> 
+			
+			<div id = "main"> 
+			<br>
+			<br>			
+						<body align="center">
+<h1 style="font-size:3vw;">Order Confirmation</h1>
+						<hr width="25%">
+						<br>
+	<div id = "rowrow">
+<div id = "colcol">
+	<form name="input">
+
+	<table align = "center" cellspacing = "4" width = "80%" id = "tabula" />
+
+	<!-- input -->	
+	<tr>
+		<td align = "justify" />
+		<label for="">&nbsp;Location: </label>
+	
+		<td align = "justify">
+  <input type="radio" name="lcode" value="Metro Manila" checked> Metro Manila<br>
+  <input type="radio" name="lcode" value="Luzon"> Luzon<br>
+  <input type="radio" name="lcode" value="Visayas"> Visayas<br> 
+  <input type="radio" name="lcode" value="Mindanao"> Mindanao
+		</td>
+	
+
+	
+	<tr>
+		<td align = "justify" />
+		<label for="">&nbsp;Quantity: </label>
+		
+		<td align = "justify" />
+		<input type="textbox" name="qty" size = "5" />
+
+	</tr>
+	
+	<tr>
+    	<td align = "justify" />
+		<label for="">&nbsp;Price: </label>
+		
+		<td align = "justify" />
+		<input type="textbox" name="price" size = "5" value = "500" /><br />
+	</td>
+	</tr>
+    
+	<tr>
+	<td />
+	<button id = "compute" onClick="calculate(); return false;">Compute</button>&nbsp;&nbsp;&nbsp;
+    
+	<td />	
+	<button type = "reset" id = "reset">Reset</button><br />
+	<!-- output -->	
+	</tr>
+	
+		<tr>
+	<td />
+	</tr>
+	
+	
+	<tr>
+		<td align = "justify" />
+		<label for="">Selected Location:</label>
+		<td align = "justify" />		
+		<input type="textbox" width = "20" name="lt">
+	</tr>
+	
+	
+
+	<tr>	
+		
+		<td align = "justify">
+		<label for="">Shipping Fee:</label>
+		<td align = "justify" />
+		<input type="textbox" name="sf">
+	</tr>
+	
+	<tr>
+		<td align = "justify" />
+		<label for="">Items Subtotal:</label>
+		<td align = "justify" />	
+		<input type="textbox" name="tot"><br />		
+
+	</tr>
+
+	
+	<tr>	
+		
+		<td align = "justify">
+		<label for="">Discount:</label>
+		<td align = "justify" />		
+		<input type="textbox" name="disc">
+	</tr>	
+	
+	<tr>	
+		
+		<td align = "justify">
+		<label for="">Amount:</label>
+		<td align = "justify">		
+		<input type="textbox" name="fin">
+
+	</tr>
+	
+		
+
+
+	<!-- buttons -->	
+
+	
+
+</table>	
+	
+<br />
+
+  </form>
+  </div>
+  <div id = "colcol2">
+		<div class="imgcontent">
+
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="teen4.png" style="width:70%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="teen5.png" style="width:70%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="teen1.png" style="width:70%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="teen2.png" style="width:70%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="teen3.png" style="width:70%">
+
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+		</div>
+  </div>
+  
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  <br><br>
+  <button id = "boton" onclick="document.getElementById('id01').style.display='block'"><span style="cursor:pointer">Check Out</span></button>
+						
+						
+						
+						
+											</div>
+	<br /><br /><br />
+						<h1 style="font-size:3vw;" >Contact Us</h1>
+						<hr width="25%">
+
+				</div>	
+			
+		<div id="contact"> 	
+				<div class="rowcon">
+				  <div class="columncon">
+					  <h5>For inquiries:</h5>
+					  <p id = "nums">
+						&nbsp;&nbsp;&nbsp;&nbsp;Call Trunkline: (02)-681-3581 <br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Globe: +‎639-97-375-9397<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Smart: +639-61-283-4944						
+					  </p>
+				  </div>
+				  
+				  <div class="columncon">
+					  <h5>Social Media:</h5>				  
+					  <p id = "nums">
+						
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.facebook.com/ChronoPH" target="_blank"><img src = "fb.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;facebook.com/ChronoPH </a> <br><br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.twitter.com/ChronoPH" target="_blank"><img src = "twitter.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;twitter.com/ChronoPH </a><br><br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.instagram.com/ChronoPH" target="_blank"><img src = "ig.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;instagram.com/ChronoPH </a>	 
+					  </p>				  
+				  </div>
+				  
+				  <div class="columncon">
+					<h5>Feedbacks? Let us know.</h5>
+					  <p id = "nums">
+						&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:iamklauregpala@yahoo.com?subject=Inquiry"><img src = "email.png" id = "imgsoc"></a></button>&nbsp;&nbsp;&nbsp;&nbsp;Klaudice Regpala	<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:iamklauregpala@yahoo.com?subject=Inquiry"><img src = "email.png" id = "imgsoc"></a></button>&nbsp;&nbsp;&nbsp;&nbsp;Mike Henry Ramirez					
+					  </p>				  
+				  </div>
+				</div>
+		  </div>	
+		  </div>
+		  
+		  <div id="footer"> 
+&copy;Chrono Philippines<br>
+All rights reserved, 2019 
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<html>
+<head>
+	<title>Home - Chrono PH</title>
+	<link rel = "stylesheet" type = "text/css" href = "3_home.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<!-- ********************** favicon  ********************** -->
+	<link rel = "shortcut icon" type = "image/x-icon" href = "1564545162.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}	
+	</script>
+</head>
+
+<body>		
+<div id = "container">
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
+
+<div class="w3-top">
+ <div id ="top">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#homeprod">Products</a>
+  <a href="#homeabout">About Us</a>
+  <a href="#team">The Team</a>  
+  <a href="#contact">Contact Us</a> 
+  <a href="faq.html">FAQs</a> 
+</div>
+		
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&nbsp;&nbsp;&#9776;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <a href="#"><img src = "ohno.png" id = "topimg"></a>
+
+  </div>
+
+</div>
+</div>
+
+<div id = "concon">	
+		<div id = "header"> 
+			<img src = "header.png" id = "bebe" width = "100%">			
+		</div>	
+		
+
+		<div id = "content"> 
+			
+			<div id = "main"> 
+			<br>
+			<br>			
+						<body align="center">
+							<table border="2">
+								<div class="slideshow-container">
+
+									<div class="mySlides fade">
+									  <img src="1.png" style="width:103%">
+									</div>
+
+									<div class="mySlides fade">
+									  <img src="2.png" style="width:103%">
+									</div>
+
+									<div class="mySlides fade">
+									  <img src="3.png" style="width:103%">
+									</div>
+
+
+								</div>
+								<br>
+
+								<div style="text-align:center">
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span>  
+								</div>
+
+							<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+							   slides[i].style.display = "none";  
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1}    
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+							setTimeout(showSlides, 4000);
+							}
+							</script>	
+				</div>		
+			</div>
+						<br><br><br><br><br>		
+				<!---------------->
+					<div id = "homeabout">
+						<h1 style="font-size:3vw;" >About the Company</h1>
+						<hr width="25%">
+						<p>
+							Chrono Philippines is a cost competitive company which offers high quality watches nationwide.
+							</p>
+							<p>
+							Chrono Philippines also has a strong foundation since the owners and the staff collaborate effectively to continuously improve the company. We value our customers by providing fast, efficient and reliable service that suits all of the Filipinos budget and the best possible products that will exceed their expectations.
+							</p>
+							<p>
+							At Chrono, we will keep you not only classy, but also on time.						
+						</p>
+					</div>
+					<br><br><br>
+				<!---------------->					
+					<div id = "team">
+						<h1 style="font-size:3vw;" >The Team</h1>
+						<hr width="25%">
+<div class="row2">
+  <div class="column2">
+    <div class="card">
+      <a href = "https://www.facebook.com/KaeMhiles" target = "_blank"><img src="jonard.jpg" alt="Jonard" id = "teampic" style="width:75%"></a>
+      <div class="teamyeah">
+        <h4>Jonard Bautista</h4>
+        <p class="title">IT Student, Web Developer</p>
+        <p>Jonard's dream is to be a professional player in Rules of Survival, Mobile Legends and League of Legends. He loves playing basketball, volleyball, baseball and watching Anime. </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column2">
+    <div class="card">
+      <a href = "https://www.facebook.com/shan.qt.18" target = "_blank"><img src="shanna.jpg" alt="Shanna" id = "teampic" style="width:75%"></a>
+      <div class="teamyeah">
+        <h4>Shanna May Jubilo</h4>
+        <p class="title">IT Student, Web Designer</p>
+        <p>Shanna wants to finish her studies and have a stable life with her family. She also hopes that BS Information Technology, the course that she's taking would help her in her future.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column2">
+    <div class="card">
+      <a href = "https://www.facebook.com/ramirezmike08" target = "_blank"><img src="mike.jpg" alt="Mike" id = "teampic" style="width:75%"></a>
+      <div class="teamyeah">
+        <h4>Mike Henry Ramirez</h4>
+        <p class="title">IT Student, Web Designer</p>
+        <p>Mike is currently in his sophomore year of college in ICCT Cainta - Main Campus. He hopes to get good grades this trimester because if he gets a failing grade or "singko", his dreams will vanquish.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <a href = "https://www.facebook.com/klotato19" target="_blank"><img src="klau.jpg" alt="Klau" id = "teampic" style="width:75%"></a>
+      <div class="teamyeah">
+        <h4>Klaudice Regpala</h4>
+        <p class="title">IT Student, Web Developer</p>
+        <p>Klau is an aspiring web developer who loves her jowa, reading Wikipedia articles, her pet cat Ling-Ling and playing peaceful mode in Minecraft because she has anger management issues.</p>
+      </div>
+    </div>
+  </div>
+					<br><br><br><br><br>
+</div>					<br><br><br><br><br>
+				<!---------------->
+				<div>						<br><br><br><br><br>
+						<h1 style="font-size:3vw;">Products</h1>
+						<hr width="25%">
+						<br>
+						<div class="row" id = "homeprod">
+							<div class="column">
+									<div class="overover"> 
+										<a href = "products.html"><img src="men2.png" alt="menblackwatch" style="width:100%"></a>
+											<div class="middle">
+												<div class="text">Show More</div> 
+											</div>
+									</div>
+							</div>
+							 
+							 <div class="column">
+									<div class="overover"> 
+										<a href = "products.html"><img src="women3.png" alt="womenblackwatch" style="width:100%"></a>
+											<div class="middle">
+												<div class="text">Show More</div> 
+											</div>
+									</div>
+							</div> 
+
+							<div class="column">
+								<div class="overover"> 
+									<a href = "products.html"><img src="teen5.png" alt="teenblackwatch" style="width:100%"></a>
+										<div class="middle">
+											<div class="text">Show More</div> 
+										</div>
+								</div>
+							</div> 
+						</div>
+				</div>	
+						
+			
+	</div>
+</div>
+
+					<br><br><br><br><br>
+<div id="footer"> 
+&copy;Chrono Philippines<br>
+All rights reserved, 2019 
+  </div>
+
+	<br>
+	<br>
+	
+						<h1 style="font-size:3vw;" >Contact Us</h1>
+						<hr width="25%">			
+		<div id="contact"> 	
+				<div class="rowcon">
+				  <div class="columncon">
+					  <h5>For inquiries:</h5>
+					  <p id = "nums">
+						&nbsp;&nbsp;&nbsp;&nbsp;Call Trunkline: (02)-681-3581 <br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Globe: +‎639-97-375-9397<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Smart: +639-61-283-4944						
+					  </p>
+				  </div>
+				  
+				  <div class="columncon">
+					  <h5>Social Media:</h5>				  
+					  <p id = "nums">
+						
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.facebook.com/ChronoPH" target="_blank"><img src = "fb.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;facebook.com/ChronoPH </a> <br><br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.twitter.com/ChronoPH" target="_blank"><img src = "twitter.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;twitter.com/ChronoPH </a><br><br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;<a href = "www.instagram.com/ChronoPH" target="_blank"><img src = "ig.png" id = "imgsoc">&nbsp;&nbsp;&nbsp;&nbsp;instagram.com/ChronoPH </a>	 
+					  </p>				  
+				  </div>
+				  
+				  <div class="columncon">
+					<h5>Feedbacks? Let us know.</h5>
+					  <p id = "nums">
+						&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:iamklauregpala@yahoo.com?subject=Inquiry"><img src = "email.png" id = "imgsoc"></a></button>&nbsp;&nbsp;&nbsp;&nbsp;Klaudice Regpala	<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:iamklauregpala@yahoo.com?subject=Inquiry"><img src = "email.png" id = "imgsoc"></a></button>&nbsp;&nbsp;&nbsp;&nbsp;Mike Henry Ramirez					
+					  </p>				  
+				  </div>
+				</div>
+		  </div>	
+</body>
+</html>

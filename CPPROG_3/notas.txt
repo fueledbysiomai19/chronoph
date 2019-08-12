@@ -1,0 +1,36 @@
+Type the anchor tag <a href= in your HTML document. ...
+Type mailto: after the "=" sign. ...
+Type the users email next. ...
+Add a pre-made subject-line (optional). ...
+Type > to add a closing bracket. ...
+Type link text. ...
+Type </a> after the link text. ...
+Continue the remainder of the HTML document.
+
+CHECK OUT FORM
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form
+
+IMAGES
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery
+
+ADD TO CART
+https://www.youtube.com/watch?v=YeFzkC2awTM&fbclid=IwAR31o3PcxEbUOMlLbVMNveI9a17-vek4wcVUJfig_vHq7moc1Bppls3vLh8
+
+PORTFOLIO
+https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
+
+
+IMAGE ZOOM PROD
+https://www.w3schools.com/howto/howto_js_image_zoom.asp
+
+
+OVERLAY
+
+https://www.w3schools.com/howto/howto_css_overlay.asp
+
+
+RANDOM NUMBER
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_random2
+
+
